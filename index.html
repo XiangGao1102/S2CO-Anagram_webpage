@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-180733097-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-180733097-1');
+</script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FBSDiff: Plug-and-Play Frequency Band Substitution of Diffusion Features for Highly Controllable Text-Driven Image Translation</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+  </head>
+
+  <style>
+  .section-title {
+    font-family: "Lato"
+  }
+  .authors {
+    font-family: "Lato";
+  }
+  h1, h2, h3, h4, h5, h6, p {
+    font-family: "Lato";
+  }
+  .pub-highlight {
+    color: #e83015;
+    font-family: monaco;
+  }
+  </style>
+  
+
+<!-- cover -->
+  <section>
+    <div class="jumbotron text-center mt-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 style="font-family: Lato;">Structure-Semantic Co-optimized Latent Diffusion Model for Fast Visual Anagram Synthesis</h2->
+            <h4 style="color:#5a6268;">NeurIPS 2026</h4>
+            <!--<div class="pub-highlight">Ranks 1st on Sintel Optical Flow benchmark on Mar. 17th, 2022 </div>-->
+            <hr>
+            <h6> <a href="https://xianggao1102.github.io/S2CO-Anagram_webpage/" target="_blank">Xiang Gao</a>, &nbsp;&nbsp;&nbsp;
+                 Yunpeng Jia
+            	  <p>
+                    School of Digital Media and Design Arts, &nbsp;&nbsp;&nbsp; Beijing University of Posts and Telecommunications <br>
+                    {gaoxiang1102, xibei156}@bupt.edu.cn
+                </p>
+            <div class="row justify-content-center">
+              <div class="column">
+                  <p class="mb-5"><a class="btn btn-large btn-light" href="https://arxiv.org/pdf/2606.16241"  target="_blank">
+                    <i class="fa fa-file"></i>Paper</a> </p>
+              </div>
+              <div class="column">
+                  <p class="mb-5"><a class="btn btn-large btn-light" href="https://github.com/XiangGao1102/S2CO-Anagram" role="button"  target="_blank">
+                    <i class="fa fa-github-alt"></i>Code</a> </p>
+              </div>
+              <!-- <div class="column">
+                  <p class="mb-5"><a class="btn btn-large btn-light" href="https://zjueducn-my.sharepoint.com/:f:/g/personal/pengsida_zju_edu_cn/Eo9zn4x_xcZKmYHZNjzel7gBdWf_d4m-pISHhPWB-GZBYw?e=Hf4mz7" role="button">
+                    <i class="fa fa-database"></i> Data</a> </p>
+              </div> -->
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+            <hr style="margin-top:0px">
+                <img class="img-fluid" src="img/teaser.jpg" alt="teaser" width="100%">
+<p class="text-justify">Our method enables fast synthesis of high-quality visual anagram images that conceptually
+conform to different text prompts after undergoing a transformation such as flipping and rotation,
+offering artists and designers an efficient tool to create optical illusion visual arts.
+</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h3>Abstract</h3>
+            <hr style="margin-top:0px">
+          <p class="text-justify">
+            Visual anagram is an intriguing form of art creation wherein a single image presents
+different conceptual interpretations under transformations such as flipping or rotation. Recent work has achieved visual anagram synthesis by leveraging pretrained
+text-to-image (T2I) diffusion models, yet still suffers from several key limitations
+including computational inefficiency, suboptimal aesthetic quality, and weak semantic fidelity and expressiveness. This work focuses on generating visual anagrams
+with substantially improved visual quality at minimal computational cost, thereby
+advancing intelligent creation of illusionary digital art. To increase image resolution while reducing time overhead, we adapt the cutting-edge parallel denoising
+algorithm from pixel-based T2I model to the adversarially distilled latent-based
+one, and accordingly propose a structure-semantic co-optimization (S2CO) framework to counteract the consequent visual degradation. As the core of our approach,
+S2CO framework comprises three key innovations: (i) null-text structure alignment
+optimization; (ii) semantic enhancement optimization; (iii) attention-guided noise
+fusion. Building upon these components, our method dubbed S2CO-Anagram
+is able to generate higher-resolution anagram images with noticeably superior
+visual harmony and semantic faithfulness than related SOTA approaches, all while
+achieving substantially faster inference speed. Code is publicly available at <a href="https://github.com/XiangGao1102/S2CO-Anagram/tree/main">this link.</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+ 
+
+  
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h3>Method</h3>
+            <hr style="margin-top:0px">
+                <img class="img-fluid" src="img/method.jpg" alt="method" width="100%">
+                <br>
+                <p class="text-justify">Our method synchronously denoises two latent views linked by a specified transformation followed by fusing their noise estimations at each denoising step. Grounding
+on this process, a novel optimization framework comprising null-text structure alignment, semantic enhancement, and attention-guided noise fusion is proposed to enhance the generated results.
+</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+  
+  
+   <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h3>Contributions</h3>
+            <hr style="margin-top:0px">
+            <p class="text-justify">
+			(1) We propose S2CO-Anagram, a lightweight few-step LDM that efficiently generates high-quality visual anagrams via a novel structure-semantic co-optimization algorithm. <br><br>
+			(2) A novel null-text structure alignment optimization is proposed to suppress structural divergence along the multi-view synchronous denoising process, promoting semantic faithfulness
+and visual harmony of the generated anagram images from a frequency-domain perspective. <br><br>
+			(3) A semantic enhancement optimization which enhances conceptual fidelity and discernibility of the generated results by elevating cross-attention activations associated with key concepts. <br><br>
+      (4) An attention-guided noise fusion scheme is proposed to promote semantic saliency and distinctiveness by leveraging cross-attention maps to guide spatially adaptive noise fusion. <br><br>
+      (5) Our S2CO-Anagram outperforms related approaches both qualitatively and quantitatively in visual anagram generation, all while achieving substantially faster inference speed.
+    </div>
+      </div>
+    </div>
+  </section>
+  <br>
+  
+  
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h3>Results</h3>
+            <hr style="margin-top:0px">
+            <p class="text-justify">Visual anagram synthesis results of our S2CO-Anagram using different transformation functions g(·) with keywords in each text prompt highlighted in red. </p>
+                <img class="img-fluid" src="img/qualitative_res.jpg" alt="example qualitative results" width="100%">
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h3>Diverse Generation Results</h3>
+            <hr style="margin-top:0px">
+            <p class="text-justify">Diverse results with fixed text prompts (P1, P2) is enabled by varying the initial noise latent. </p>
+                <img class="img-fluid" src="img/diversity.jpg" alt="diverse generation results" width="100%">
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+
+<hr class="dashed-line">
+
+<!--BibTex citation -->
+  <!-- <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>
+@inproceedings{gao2024fbsdiff,
+  title={FBSDiff: Plug-and-Play Frequency Band Substitution of Diffusion Features for Highly Controllable Text-Driven Image Translation},
+  author={Gao, Xiang and Liu, Jiaying},
+  booktitle={Proceedings of the ACM International Conference on Multimedia},
+  pages={4101--4109},
+  year={2024}
+}
+      </code></pre>
+    </div>
+</section> -->
+<!--End BibTex citation -->
+  
